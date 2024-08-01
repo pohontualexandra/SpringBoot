@@ -1,0 +1,47 @@
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('FitForce', 'Resistance', NOW(), 'Set of 5 resistance bands with varying difficulty levels.', 'resistance_bands.jpg', 'Resistance Bands', 19.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('Serene‍♀', 'Yoga', NOW(), 'Thick and comfortable yoga mat with non-slip grip.', 'yoga_mat.jpg', 'Yoga Mat', 34.95);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('JumpX', 'Cardio', NOW(), 'Adjustable jump rope for all fitness levels.', 'jump_rope.jpg', 'Jump Rope', 9.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('IronFlex', 'Strength', NOW(), 'Set of two dumbbells with weight options (select weight in checkout).', 'dumbbells.jpg', 'Dumbbells (Set of 2)', 49.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('PowerFit', 'Strength', NOW(), 'Weighted medicine ball for various exercises.', 'medicine_ball.jpg', 'Medicine Ball', 24.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('ActiveFit', 'Strength', NOW(), 'Pair of adjustable ankle weights for added resistance.', 'ankle_weights.jpg', 'Ankle Weights (Pair)', 14.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('FlexZone', 'Other', NOW(), 'High-density foam roller for muscle massage and recovery.', 'foam_roller.jpg', 'Foam Roller', 19.95);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('GripPro', 'Strength', NOW(), 'Padded workout gloves for improved grip and wrist support.', 'workout_gloves.jpg', 'Workout Gloves', 12.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('BalanceMind', 'Yoga', NOW(), 'Set of two lightweight and supportive yoga blocks for improved flexibility.', 'yoga_blocks.jpg', 'Yoga Blocks (Set of 2)', 17.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('FlexBand', 'Strength', NOW(), 'Lightweight and portable resistance loop band for various exercises.', 'mini_band.jpg', 'Mini Band', 7.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('SwiftStride', 'Cardio', NOW(), 'Lightweight and breathable running shoes with cushioned soles.', 'running_shoes.jpg', 'Running Shoes (Unisex)', 79.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('CoreFit', 'Yoga', NOW(), 'Inflatable stability ball for core strengthening and balance exercises.', 'stability_ball.jpg', 'Stability Ball', 39.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('DoorGym', 'Strength', NOW(), 'Adjustable pull-up bar for doorway installation, perfect for home workouts.', 'pull_up_bar.jpg', 'Pull-Up Bar', 29.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('FitActive', 'Cardio', NOW(), 'Folding exercise mat for easy storage and portability.', 'exercise_mat.jpg', 'Exercise Mat', 24.95);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('IronCore', 'Strength', NOW(), 'Cast iron kettlebell for various strength training exercises (select weight in checkout).', 'kettlebell.jpg', 'Kettlebell', 44.99);
+
+INSERT INTO products (brand, category, created_at, description, image_file_name, name, price)
+VALUES ('PulseTrack', 'Other', NOW(), 'Wrist-worn heart rate monitor for tracking your workouts.', 'heart_rate_monitor.jpg', 'Heart Rate Monitor', 49.99);

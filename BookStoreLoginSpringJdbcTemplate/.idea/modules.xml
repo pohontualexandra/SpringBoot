@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BookStoreLoginSpring/BookStoreLoginSpring.iml" filepath="$PROJECT_DIR$/BookStoreLoginSpring/BookStoreLoginSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/BookStoreLoginSpringJdbcTemplate.iml" filepath="$PROJECT_DIR$/.idea/BookStoreLoginSpringJdbcTemplate.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,9 @@
+CREATE TABLE student (
+  student_id BIGINT NOT NULL PRIMARY KEY,
+  email_id VARCHAR(255),
+  first_name VARCHAR(255),
+  last_name VARCHAR(255),
+  guardian_name VARCHAR(255),
+  guardian_email VARCHAR(255),
+  guardian_mobile VARCHAR(15)
+);

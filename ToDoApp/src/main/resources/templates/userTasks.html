@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Tasks</title>
+</head>
+<body>
+<h1>User Tasks</h1>
+<form action="/userTasks/save" method="post">
+    <label for="userId">User ID:</label>
+    <input type="number" id="userId" name="userId" required>
+    <label for="taskId">Task ID:</label>
+    <input type="number" id="taskId" name="taskId" required>
+    <label for="date">Date:</label>
+    <input type="datetime-local" id="date" name="date" required>
+    <button type="submit">Assign Task</button>
+</form>
+<table>
+    <thead>
+    <tr>
+        <th>Task ID</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="userTask : ${userTasks}">
+        <form th:action="@{/userTasks/save}" method="post">
+            <td><input type="number" th:value="${userTask.task.taskId}" name="taskId" readonly></td>
+            <td><input type="datetime-local" th:value="${#temporals.format(userTask.date, 'yyyy-MM-dd\'T\'HH:mm')}" name="date"></td>
+            <td><input type="checkbox" th:checked="${userTask.status}" name="status"></td>
+            <td>
+                <button type="submit">Save</button>
+                <form th:action="@{/userTasks/delete/{id}(id=${userTask.userTaskId})}" method="post" style="display:inline;">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </form>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

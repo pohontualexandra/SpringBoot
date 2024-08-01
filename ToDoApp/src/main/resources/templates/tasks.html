@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Tasks</title>
+</head>
+<body>
+<h1>Tasks</h1>
+<form action="/tasks/save" method="post">
+    <label for="taskName">Task Name:</label>
+    <input type="text" id="taskName" name="taskName" required>
+    <button type="submit">Add Task</button>
+</form>
+<table>
+    <thead>
+    <tr>
+        <th>Task ID</th>
+        <th>Task Name</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody th:each="task : ${tasks}">  <tr>
+        <td th:text="${task.taskId}"></td>
+        <td th:text="${task.taskName}"></td>
+        <td>
+            <form action="/tasks/delete/{id}" method="post">
+                <input type="hidden" name="_method" value="DELETE">
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<form action="/userTasks" method="get">
+    <p>Your Personal Tasks:</p>
+    <button type="submit">View</button>
+</form>
+</body>
+</html>

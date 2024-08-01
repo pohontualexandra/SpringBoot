@@ -1,0 +1,42 @@
+CREATE TABLE books (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  description VARCHAR(255),
+  image TEXT,
+  quantita INTEGER NOT NULL,
+  price DOUBLE PRECISION NOT NULL
+);
+
+-- Insert 1
+INSERT INTO books (name, description, image, quantita, price)
+VALUES ('The Lord of the Rings', 'An epic high-fantasy trilogy', 'https://example.com/lotr.jpg', 10, 19.99);
+
+-- Insert 2
+INSERT INTO books (name, description, image, quantita, price)
+VALUES ('Pride and Prejudice', 'A classic novel of love and society', 'https://m.media-amazon.com/images/I/81gepf1eMqL._SL1500_.jpg', 5, 12.50);
+
+-- Insert 3
+INSERT INTO books (name, description, image, quantita, price)
+VALUES ('To Kill a Mockingbird', 'A powerful story about racial injustice', 'https://m.media-amazon.com/images/I/81gepf1eMqL._SL1500_.jpg', 7, 14.95);
+
+-- Insert 4
+INSERT INTO books (name, description, image, quantita, price)
+VALUES ('The Hitchhikers Guide to the Galaxy', 'A humorous science fiction comedy series', 'https://ipcdn.freshop.com/resize?url=https://images.freshop.com/00786936254884/de7a51ede0d684edddcb08e5ada8c467_large.png&width=256&type=webp&quality=80', 3, 9.99);
+
+-- Insert 5
+INSERT INTO books (name, description, image, quantita, price)
+VALUES ('Harry Potter and the Sorcerers Stone', 'The first book in the magical series', 'https://m.media-amazon.com/images/I/71t7lpdpXXL._UC256,256_CACC,256,256_.jpg', 15, 8.99);
+
+-- Insert 6
+INSERT INTO books (name, description, image, quantita, price)
+VALUES ('The Martian', 'A thrilling story of survival on Mars', 'https://m.media-amazon.com/images/I/71tfO3RZLrL._UC256,256_CACC,256,256_.jpg', 2, 17.99);
+
+CREATE TABLE carrello (
+  id_carrello SERIAL PRIMARY KEY,
+  id_utente INT NOT NULL,
+  id_prodotto INT NOT NULL,
+  quantita INT DEFAULT 1,
+  price DOUBLE PRECISION NOT NULL,
+  FOREIGN KEY (id_utente) REFERENCES student(id),
+  FOREIGN KEY (id_prodotto) REFERENCES books(id)
+);

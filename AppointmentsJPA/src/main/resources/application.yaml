@@ -1,0 +1,13 @@
+server:
+  port:8088
+spring:
+  application:
+    name: appointments
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/appointments
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
